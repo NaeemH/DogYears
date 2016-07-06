@@ -10,6 +10,29 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
+    @IBOutlet weak var dogAgeTextField: UITextField!
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    //get value of dogAgeTextField, multiply by 7, display result in result Label
+    @IBAction func findAge(_ sender: AnyObject) {
+        
+        //converts dogAgeField from string to int type and unwraps it
+        
+        if Int(dogAgeTextField.text!) != nil {
+            var age = Int(dogAgeTextField.text!)!
+            age = age * 7
+            resultLabel.text = "Your dog's age is \(age)!"
+        } else { resultLabel.text = "Put in a number!" }
+        
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        self.view.endEditing(true)
+    }
+
+    
+    //array that holds all of the titles and images in a collection view
     let reuseIdentifier = "cell"
     var items = [
         SwagItem(title: "Corgi", imagePath: "corgi"),
