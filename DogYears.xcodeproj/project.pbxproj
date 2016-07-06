@@ -15,6 +15,7 @@
 		DF82D6CE1D2C50EB00034DA0 /* DogYearsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF82D6CD1D2C50EB00034DA0 /* DogYearsTests.swift */; };
 		DF82D6D91D2C50EB00034DA0 /* DogYearsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF82D6D81D2C50EB00034DA0 /* DogYearsUITests.swift */; };
 		DF82D6E71D2C51E100034DA0 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF82D6E61D2C51E100034DA0 /* MyCollectionViewCell.swift */; };
+		DFA2AAA11D2D5EAA005EBCCE /* SwagItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2AAA01D2D5EAA005EBCCE /* SwagItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		DF82D6D81D2C50EB00034DA0 /* DogYearsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogYearsUITests.swift; sourceTree = "<group>"; };
 		DF82D6DA1D2C50EB00034DA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF82D6E61D2C51E100034DA0 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		DFA2AAA01D2D5EAA005EBCCE /* SwagItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwagItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				DF82D6BA1D2C50EB00034DA0 /* ViewController.swift */,
 				DF82D6BC1D2C50EB00034DA0 /* Main.storyboard */,
 				DF82D6E61D2C51E100034DA0 /* MyCollectionViewCell.swift */,
+				DFA2AAA01D2D5EAA005EBCCE /* SwagItem.swift */,
 				DF82D6BF1D2C50EB00034DA0 /* Assets.xcassets */,
 				DF82D6C11D2C50EB00034DA0 /* LaunchScreen.storyboard */,
 				DF82D6C41D2C50EB00034DA0 /* Info.plist */,
@@ -270,6 +273,7 @@
 			files = (
 				DF82D6BB1D2C50EB00034DA0 /* ViewController.swift in Sources */,
 				DF82D6B91D2C50EB00034DA0 /* AppDelegate.swift in Sources */,
+				DFA2AAA11D2D5EAA005EBCCE /* SwagItem.swift in Sources */,
 				DF82D6E71D2C51E100034DA0 /* MyCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +511,7 @@
 				DF82D6DF1D2C50EB00034DA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF82D6E01D2C50EB00034DA0 /* Build configuration list for PBXNativeTarget "DogYearsTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +520,7 @@
 				DF82D6E21D2C50EB00034DA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF82D6E31D2C50EB00034DA0 /* Build configuration list for PBXNativeTarget "DogYearsUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +529,7 @@
 				DF82D6E51D2C50EB00034DA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

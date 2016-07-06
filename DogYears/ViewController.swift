@@ -11,7 +11,23 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
     let reuseIdentifier = "cell"
-     var items = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48"]
+    var items = [
+        SwagItem(title: "Corgi", imagePath: "corgi"),
+        SwagItem(title: "Husky", imagePath: "husky"),
+        SwagItem(title: "Retriever", imagePath: "retriever"),
+        SwagItem(title: "Terrier", imagePath: "terrier"),
+        SwagItem(title: "Poodle", imagePath: "poodle"),
+        SwagItem(title: "Beagle", imagePath: "beagle"),
+        SwagItem(title: "Rottweiler", imagePath: "rottweiler"),
+        SwagItem(title: "Boxer", imagePath: "boxer"),
+        SwagItem(title: "Great Dane", imagePath: "greatdane")
+        
+        //SwagItem(title: "", imagePath: ""),
+        
+        
+        
+//        "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48"
+    ]
     
     // MARK: - UICollectionViewDataSource protocol
     
@@ -25,10 +41,11 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MyCollectionViewCell
-        cell.myLabel.text = self.items[indexPath.item!]
+       //cell.myLabel.text = self.items[indexPath.item!]
+       //cell.backgroundImage.image = self.items[indexPath.item!]
         
         cell.backgroundColor = UIColor.cyan()
-        
+        cell.item = items[(indexPath as NSIndexPath).item]
         return cell
     }
     
